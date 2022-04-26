@@ -85,11 +85,13 @@ nav ul{
     top: 4rem;
     border-radius: 5px;
     border-style: solid;
-    width: 400px;
+    width: 350px;
+    padding: 0 1rem;
     display: none;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    z-index: 9999;
 }
 .div-card img{
     width: 100px;
@@ -97,4 +99,5 @@ nav ul{
     object-fit: cover;
 }
 .div-card section a{
+    width: 100%;
 }
