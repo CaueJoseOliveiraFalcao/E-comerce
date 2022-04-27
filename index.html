@@ -26,13 +26,18 @@
                 <ul><li><a href="#" onclick="Abrir()" id="card"><img src="./assets/img/pngwing.com.png" width="30px"></a></li></ul>
             </nav>
         </section>
+        <section class="nav-menu-mobile">
+          <div class="hamburguer"></div>
+          <div class="hamburguer"></div>
+          <div class="hamburguer"></div>
+        </section>
     </header>
     <section class="div-card">
+        <a id="botao_limpar" onclick="Limpar()">X</a>
         <img id="imagem_carro" src="" alt="" srcset="">
         <section>
             <p id="nome_preco_quantidade">
-              
-            
+             Carrinho Vazio
             </p>
             <a id="link_page" href="#" class="btn btn-buy">Ir a Pagina</a>
     </section>
@@ -46,7 +51,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Ferrari</h5>
                       <p class="card-text">100$</p>
-                      <a href="#" onclick="addCard(2)" class="btn btn-buy">Compre Agora</a>
+                      <a href="#" onclick="Requeste(1)" class="btn btn-buy">Compre Agora</a>
                     </div>
                   </div>
                   <div class="card padding-op" style="width: 20rem;">
@@ -54,7 +59,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Lamborghini</h5>
                       <p class="card-text">100$</p>
-                      <a href="#" class="btn btn-buy">Compre Agora</a>
+                      <a href="#" onclick="Requeste(2)" class="btn btn-buy">Compre Agora</a>
                     </div>
                   </div>
                   <div class="card padding-op" style="width: 20rem;">
@@ -62,7 +67,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Porshe</h5>
                       <p class="card-text">100$</p>
-                      <a href="#" class="btn btn-buy">Compre Agora</a>
+                      <a href="#" onclick="Requeste(3)" class="btn btn-buy">Compre Agora</a>
                     </div>
                   </div>
                   <div class="card padding-op" style="width: 20rem;">
@@ -70,7 +75,7 @@
                     <div class="card-body">
                       <h5 class="card-title">Supra</h5>
                       <p class="card-text">100$</p>
-                      <a href="#" class="btn btn-buy">Compre Agora</a>
+                      <a href="#" onclick="Requeste(4)" class="btn btn-buy">Compre Agora</a>
                     </div>
                   </div>
             </section>

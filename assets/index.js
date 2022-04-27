@@ -19,63 +19,78 @@ const Carros = {
   Ferrari: {
     'img': './assets/img/adrian-n-6So_bn4FW_w-unsplash.jpg',
     'Nome': 'Ferrari',
-    'Qunt': 1,
+    'Qunt': 0,
     'link': '',
     'id': 1,
-    'preco' : 100
+    'preco': 100,
+    'preco_variavel': 0
   },
   Lamborghini: {
     'img': './assets/img/alex_rainer-1_lxISUE3F4-unsplash.jpg',
     'Nome': 'Lamborghini',
-    'Qunt': 1,
+    'Qunt': 0,
     'link': '',
     'id': 2,
-    'preco' : 100
+    'preco': 100,
+    'preco_variavel': 0
   },
   Porshe: {
     'img': './assets/img/porshe.jpg',
     'Nome': 'Porshe',
-    'Qunt': 1,
+    'Qunt': 0,
     'link': '',
     'id': 3,
-    'preco' : 100
+    'preco': 100,
+    'preco_variavel': 0
   },
   Supra: {
     'img': './assets/img/supra.jpg',
     'Nome': 'Supra',
-    'Qunt': 1,
+    'Qunt': 0,
     'link': '',
     'id': 4,
-    'preco' : 100
+    'preco': 100,
+    'preco_variavel': 0
   }
 }
 
 
 let img = document.querySelector('#imagem_carro')
 let link = document.querySelector('#link_page')
+let x_buttom = document.querySelector('#botao_limpar')
 let nome_preco_quantidade = document.querySelector('#nome_preco_quantidade')
 let status_ativado = false
 let prop = ''
-let preco_atual = ''
 
-
-function addCard(id_resquest) {
-  
-  for (prop in Carros) {
-
-    if (Carros[prop].id == id_resquest) {
-      if (status_ativado == true) {
-        Carros[prop].Qunt += 1
-        preco_atual *= Carros[prop].Qunt
-      }
-      else {
-        status_ativado = true
-        img.src = Carros[prop].img
-        nome_preco_quantidade.innerHTML = `
-        ${Carros[prop].Nome} = ${Carros[prop].preco}$ Qnt = ${Carros[prop].Qunt}`
-
-      }
+function Requeste(id_carro) {
+  for (i in Carros) {
+    if (id_carro == Carros[i].id) {
+      Carros[i].img.src
+      Carros[i].Qunt += 1
+      Carros[i].preco_variavel += Carros[i].preco
+      img.src = Carros[i].img
+      link.style.display = 'block'
+      x_buttom.style.display = 'flex'
+      nome_preco_quantidade.innerHTML = `
+      Nome = ${Carros[i].Nome} <br> Preco = ${Carros[i].preco_variavel} Qunt = ${Carros[i].Qunt}`
     }
+
+  }
+
+}
+
+function Limpar() {
+  for (i in Carros) {
+    Carros[i].Qunt = 0
+    Carros[i].preco_variavel = 0
+    
+    nome_preco_quantidade.innerHTML = `Carrinho Vazio`
+    img.src = ''
+    link.style.display = 'none'
+    x_buttom.style.display = 'none'
   }
 }
+
+
+
 
