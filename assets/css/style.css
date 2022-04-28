@@ -50,10 +50,27 @@ nav ul{
         width: 30px;
         background-color: white;
         height: 0.2rem;
-        margin: 0.4rem 2rem;
+        margin-right: 2rem;
+        margin-top: 0.2rem;
+        margin-bottom: 0.2rem;
     }
     .nav-menu{
         display: none;
+    }
+    .logo{
+        background-color: rgb(190, 0, 0);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+        font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .logo img{
+        width: 100px;
+    }
+    .logo h1{
+        padding-right: 50px;
+        font-size: 20px;
     }
 }
 /*Area de Compra*/
@@ -130,4 +147,5 @@ nav ul{
 
 #botao_limpar{
     display: none;
+    cursor: pointer;
 }
