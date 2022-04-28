@@ -51,7 +51,44 @@ const Carros = {
     'id': 4,
     'preco': 100,
     'preco_variavel': 0
-  }
+  },
+  Camaro: {
+    'img': './assets/img/camaro.jpg',
+    'Nome': 'Camaro',
+    'Qunt': 0,
+    'link': '',
+    'id': 5,
+    'preco': 100,
+    'preco_variavel': 0
+  },
+  Skyline: {
+    'img': './assets/img/skyline.jpg',
+    'Nome': 'Skyline R3',
+    'Qunt': 0,
+    'link': '',
+    'id': 6,
+    'preco': 100,
+    'preco_variavel': 0
+  },
+  Supra_Tunado: {
+    'img': './assets/img/supratunado.jpg',
+    'Nome': 'Porshe',
+    'Qunt': 0,
+    'link': '',
+    'id': 7,
+    'preco': 100,
+    'preco_variavel': 0
+  },
+  Mustang: {
+    'img': './assets/img/mustang.jpg',
+    'Nome': 'Mustang GT',
+    'Qunt': 0,
+    'link': '',
+    'id': 8,
+    'preco': 100,
+    'preco_variavel': 0
+  },
+  
 }
 
 

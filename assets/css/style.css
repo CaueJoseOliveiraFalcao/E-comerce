@@ -66,6 +66,15 @@ nav ul{
 }
 /*header mobile*/
 @media (max-width:1058px) {
+    header{
+        width: 100%;
+        z-index: 9;
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: rgb(51, 51, 51);
+    }
     .hamburguer-mobile{
         display: flex;
         flex-direction: column;
@@ -101,7 +110,7 @@ nav ul{
         background-color: white;
         height: 8rem;
         right: 3rem;
-        top: 1rem;
+        top: 60vh;
         border-radius: 5px;
         border-style: solid;
         width: 350px;
@@ -112,11 +121,18 @@ nav ul{
         flex-direction: row;
         z-index: 9999;
     }
+    .cards-content{
+        justify-content: center;
+    }
+    .padding-op{
+        margin: 1rem 2rem !important;
+    }
 }
 /*Area de Compra*/
 
 .titulo-padrao{
     padding: 2rem 6.5%;
+    padding-top: 5rem;
 }
 
 .cards{
@@ -125,6 +141,10 @@ nav ul{
 .cards-content{
     display: flex;
     flex-wrap: wrap;
+}
+.img-card{
+    object-fit: cover;
+    height: 200px;
 }
 .padding-op{
     margin: 0rem 2.5%;
@@ -157,16 +177,33 @@ nav ul{
     background-color: white;
     height: 8rem;
     right: 0;
-    top: 50vh;
+    top: 7vh;
     border-radius: 5px;
     border-style: solid;
-    width: 100%;
+    width: 400px;
     padding: 0 1rem;
     display: none;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
     z-index: 9999;
+}
+@media (max-width:1000px) {
+    .div-card{
+        position: fixed;
+        background-color: white;
+        height: 8rem;
+        top: 60vh;
+        border-radius: 5px;
+        border-style: solid;
+        width: 100%;
+        padding: 0 1rem;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        z-index: 9999;
+    } 
 }
 .div-card img{
     width: 100px;
