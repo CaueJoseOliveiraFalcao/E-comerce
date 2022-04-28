@@ -40,6 +40,30 @@ nav ul{
     cursor: pointer;
     padding: 0rem 4rem;
 }
+.menu-mobile-ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: white;
+    width: 20%;
+    margin-top: 100vh;
+    height: 100%;
+    z-index: 99;
+    background-color: rgb(51, 51, 51);
+    transition: all 0.4s;
+}
+.menu-mobile-ul li{
+    margin: 2rem 0rem;
+}
+.menu-mobile-a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+}
 /*header mobile*/
 @media (max-width:1058px) {
     .hamburguer-mobile{
@@ -71,6 +95,22 @@ nav ul{
     .logo h1{
         padding-right: 50px;
         font-size: 20px;
+    }
+    .div-card{
+        position: fixed;
+        background-color: white;
+        height: 8rem;
+        right: 3rem;
+        top: 1rem;
+        border-radius: 5px;
+        border-style: solid;
+        width: 350px;
+        padding: 0 1rem;
+        display: none;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row;
+        z-index: 9999;
     }
 }
 /*Area de Compra*/
@@ -116,11 +156,11 @@ nav ul{
     position: fixed;
     background-color: white;
     height: 8rem;
-    right: 3rem;
-    top: 4rem;
+    right: 0;
+    top: 50vh;
     border-radius: 5px;
     border-style: solid;
-    width: 350px;
+    width: 100%;
     padding: 0 1rem;
     display: none;
     justify-content: space-between;

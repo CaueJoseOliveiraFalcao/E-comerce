@@ -92,5 +92,18 @@ function Limpar() {
 }
 
 
+const Div_menu_moble = document.querySelector('#menu-mobile')
 
+let HambuguerButtom = document.querySelector('.hamburguer-mobile')
+let XbuttonMenu = document.querySelector('#Xbuttom_menu')
 
+function MenuMobile(){
+  Div_menu_moble.style.margin = 0
+}
+function fecharMenuMobile(){
+  Div_menu_moble.style.margin = '100vh'
+  CarrinhoDiv.style.display = 'none'
+}
+
+HambuguerButtom.addEventListener('click' , MenuMobile)
+XbuttonMenu.addEventListener('click' , fecharMenuMobile)
