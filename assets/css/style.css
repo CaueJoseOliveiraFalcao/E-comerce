@@ -3,6 +3,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+body{
+    background-color: rgb(241, 241, 241);
+}
 /*Header*/
 .hamburguer-mobile{
     display: none;
@@ -32,13 +35,23 @@ nav{
     justify-content: space-around;
     align-items: center;
     color: white;
+    height: 100%;
 }
 nav ul{
     list-style: none;
     font-size: 17px;
     margin: 0;
+    display: flex;
+    align-items: center;
+    border-left-style: solid;
+    border-color:rgb(241, 241, 241);
+    border-width: 0.1rem;
     cursor: pointer;
-    padding: 0rem 4rem;
+    height: 100%;
+    padding: 0rem 2rem;
+}
+.nav-menu{
+    height: 84px!important;
 }
 .menu-mobile-ul{
     display: flex;
@@ -148,6 +161,7 @@ nav ul{
 }
 .padding-op{
     margin: 0rem 2.5%;
+    padding: 1rem;
 }
 .btn-buy{
     background: rgb(190, 0, 0);
